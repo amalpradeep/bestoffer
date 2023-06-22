@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 const Header = () => {
   return (
@@ -8,11 +7,9 @@ const Header = () => {
         <div className='flex items-center justify-between h-16'>
           <div className='flex items-center justify-between sm:items-stretch sm:justify-start'>
             <div className='flex-shrink-0 flex items-center p-10'>
-              <Image
-                classNameName='h-full w-full'
+              <img
+                className=' h-34 w-40'
                 src='/img/logo.png'
-                height={50}
-                width={150}
                 alt='logo'
               />
             </div>

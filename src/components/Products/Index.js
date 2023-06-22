@@ -26,24 +26,24 @@ const Products = () => {
       {products?.length > 0 ? (
         <div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
           {products?.map((product, i) => (
-            <div key={i} class='cursor-pointer group relative'>
-              <div class='w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none'>
+            <div key={i} className='cursor-pointer group relative'>
+              <div className='w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none'>
                 <img
+                  className='max-w-xs transition duration-300 ease-in-out scale-90 hover:scale-110 w-full h-full object-center object-cover lg:w-full lg:h-full'
                   src={product?.image}
                   alt={product?.title}
-                  class='w-full h-full object-center object-cover lg:w-full lg:h-full'
                 />
               </div>
-              <div class='mt-4'>
-                <div class='w-full'>
-                  <div class='w-full flex flex-center justify-between'>
-                    <p class='text-sm font-medium text-gray-900'>
+              <div className='mt-4'>
+                <div className='w-full'>
+                  <div className='w-full flex flex-center justify-between'>
+                    <p className='text-sm font-medium text-gray-900'>
                       {product?.title}
                     </p>
                   </div>
                 </div>
               </div>
-              <h3 class='text-sm text-gray-700'>
+              <h3 className='text-sm text-gray-700'>
                 <p>{product?.category}</p>
               </h3>
             </div>
